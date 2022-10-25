@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IllamEmber</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- link for google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <!-- link for fontawesome -->
+    <script src="https://kit.fontawesome.com/a85234e92c.js" crossorigin="anonymous"></script> 
+
+    {{content-for "head"}}
+
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/illam-ember.css">
+
+    {{content-for "head-footer"}}
+    
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+          <div class="logo">
+            <a href="/">Illam</a> 
+          </div>
+          <div class="navbar-links-div">
+              <ul class="links">
+                  <li>
+                      <a href="/">Home</a>
+                  </li>
+                  <li>
+                      <a href="/about">About Us</a>
+                  </li>
+                  <li>
+                      <a href="#">Properties</a>
+                      <ul class="sub-menu">
+                          <li><a href="/list">Look For A Property</a></li>
+                          <li><a href="/add">Post Your Property</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="/contact">Contact Us</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+    {{content-for "body"}}
+
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/illam-ember.js"></script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>
